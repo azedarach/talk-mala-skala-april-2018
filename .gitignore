@@ -1,0 +1,15 @@
+*~
+*.log
+*.aux
+*.nav
+*.out
+*.snm
+*.toc
+*.pdf
+
+figures/*.1
+figures/*.mp
+figures/*.t1
+
+!figures/*.pdf
+figures/dmsignals.pdf

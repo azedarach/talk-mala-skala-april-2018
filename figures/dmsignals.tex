@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+
+\DeclareGraphicsRule{*}{mps}{*}{}
+\DeclareGraphicsExtensions{.pdf}
+
+\usepackage{amsmath}
+\usepackage{feynmp}
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\newsavebox{\feynmanrules}
+
+\sbox{\feynmanrules}{
+  \begin{fmffile}{./dmsignals}
+    \fmfset{thin}{.8pt}
+
+    \begin{fmfgraph*}(80,80)
+      \fmfkeep{dmsignals}
+      \fmfstraight
+      \fmfleft{dm1,sm1}
+      \fmfright{dm2,sm2}
+      \fmf{fermion}{dm1,int}
+      \fmf{fermion}{sm1,int}
+      \fmf{fermion}{int,dm2}
+      \fmf{fermion}{int,sm2}
+      \fmfblob{30}{int}
+      \fmfv{label={DM}}{dm1}
+      \fmfv{label={DM}}{dm2}
+      \fmfv{label={SM}}{sm1}
+      \fmfv{label={SM}}{sm2}
+    \end{fmfgraph*}
+
+  \end{fmffile}
+}
+
+\begin{center}
+\fmfreuse{dmsignals}
+\end{center}
+
+\end{document}
