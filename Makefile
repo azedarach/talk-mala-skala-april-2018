@@ -27,6 +27,7 @@ TALK_FIGS	:= \
 		$(TALK_FIGS_DIR)/bbn.pdf \
 		$(TALK_FIGS_DIR)/bulletcluster.jpg \
 		$(TALK_FIGS_DIR)/cmb_power_spectrum.pdf \
+		$(TALK_FIGS_DIR)/cmssm_a_funnel.png \
 		$(TALK_FIGS_DIR)/cmssm_mupos1TeV_MGluMSu6_exclusions.png \
 		$(TALK_FIGS_DIR)/cmssm_mupos1TeV_m12m0_Omega.png \
 		$(TALK_FIGS_DIR)/cmssm_mupos1TeV_m12m0_SigmaSIProton.png \

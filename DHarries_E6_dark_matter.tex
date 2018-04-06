@@ -960,4 +960,112 @@
   \end{center}
 \end{frame}
 
+\appendix
+
+\begin{frame}
+  \begin{center}
+    {
+      \Large
+      Additional Slides
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The CSE$_6$SSM}
+  \begin{itemize}
+    \vfill
+    \item {\color{red} General model is complicated}
+          \begin{itemize}
+            \item $O(200)$ new parameters (assuming no new sources of
+                  CP-violation)
+            \item Many masses and mixings
+          \end{itemize}
+    \vfill
+    \item Consider constrained model (CSE$_6$SSM) inspired by gravity
+          mediated SUSY breaking
+    \vfill
+  \item {\color{blue} Universal soft breaking parameters: $M_{1/2}$, $A_0$,
+    $B_0$, $m_0$}
+    \vfill
+    \item Interested in mechanism decoupling $Z^\prime$ from EWSB conditions
+          $\Rightarrow$ can have large $s = \sqrt{s_1^2 + s_2^2}$
+    \vfill
+    \item Higgsino mass set by $\mu_{\text{eff}} = \lambda s_1 / \sqrt{2}$
+      $\Rightarrow$ acceptable LSP mass ($\lesssim$ TeV) for small
+      $\lambda$
+    \vfill
+    \item $\Rightarrow$ other exotic couplings must be small,
+          otherwise exotic states are tachyonic
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Parameter Space Scans}
+  \begin{itemize}\itemsep1em
+    \item Focus on heavy $Z^\prime$, $s = 650$ TeV, choose fixed
+      $\mu_{\text{eff}}$
+    \item Achieve using semi-analytic solutions for soft parameters:
+      \begin{align*}
+        M_i(Q) &= p_i(Q) M_{1/2} + q_i(Q) A_0 \, , \quad
+        A_i(Q) = e_i(Q) A_0 + f_i(Q) M_{1/2} \, , \\
+        m_i^2(Q) &= a_i(Q) m_0^2 + b_i(Q) M_{1/2}^2 + c_i(Q) A_0 M_{1/2}
+        + d_i(Q) A_0^2 \, , \, \ldots
+      \end{align*}
+    \item Fix $m_0$ from EWSB,
+      $m_0^2 \sim -\frac{b_{H_u}}{a_{H_u}} M_{1/2}^2 - \ldots$
+    \item Implemented in FlexibleSUSY for {\color{blue} full 1-loop masses
+      and 2-loop RGEs}
+      \begin{itemize}
+      \item Resulting ``semi-analytic solver'' forms part of
+        FlexibleSUSY 2.0 [4], along with many other updates.
+      \end{itemize}
+    \item Require $\Omega h^2 \leq 0.1187$ (micrOMEGAs) and
+      $m_{h_1} = 125.09 \pm 3$ GeV
+    \item Compare with CMSSM for $|\mu| \sim 400$ GeV and $|\mu| \sim
+      1$ TeV
+  \end{itemize}
+  \vfill
+      {\tiny [4] P.~Athron, M.~Bach, D.~Harries, T.~Kwasnitza,
+        J.-h.~Park, D.~St\"{o}ckinger, A.~Voigt, and J.~Ziebell,
+        \href{http://arxiv.org/abs/1710.03760}{arXiv:1710.03760}
+      }
+\end{frame}
+
+\begin{frame}
+  \frametitle{$A$-funnel in the CSE$_6$SSM}
+  \begin{columns}[t]
+    \begin{column}{0.5\textwidth}
+      \begin{itemize} \itemsep1.5em
+        \vfill
+      \item Solutions at lower $M_{1/2}$ due to
+        $m_{A_1} \sim 2 m_{\tilde{\chi}_1^0}$
+        \vfill
+      \item CMSSM: $A$-funnel requires $\tan\beta \gtrsim 40$
+        \vfill
+      \item CSE$_6$SSM: tune $A_0$ for given $\tan\beta$, $M_{1/2}$ to that
+        $m_{A_1} \rightarrow 0$, keeping $m_{\tilde{\chi}_1^0} \sim$ fixed
+        \vfill
+      \item Lightest state $A_1$ mixture of singlets for $s \gg M_S \gg v$
+        ($\tan\delta \approx \frac{s_1 s_2}{\varphi \sqrt{s_1^2 + s_2^2}}$):
+        \vfill
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \vspace{-40pt}
+      \begin{figure}
+        \includegraphics[width=8cm]{cmssm_a_funnel}
+      \end{figure}
+    \end{column}
+  \end{columns}
+  \vspace{10pt}
+  \begin{equation*}
+    m_{A_1}^2 \approx \cos^2\delta \left ( -2 B\mu
+    - 3 \frac{\kappa A_\kappa}{\sqrt{2}} \varphi
+    - \sqrt{2} \xi \frac{\Lambda}{\varphi} + \frac{9}{2}
+    \sigma \kappa s_1 s_2 + 2\sqrt{2} \frac{\sigma \mu s_1 s_2}{\varphi}
+    + \frac{\sigma s_1 s_2 \Lambda}{\varphi^2} \right )
+  \end{equation*}
+\end{frame}
+
 \end{document}
