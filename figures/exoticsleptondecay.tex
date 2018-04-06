@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+
+\DeclareGraphicsRule{*}{mps}{*}{}
+\DeclareGraphicsExtensions{.pdf}
+
+\usepackage{amsmath}
+\usepackage{feynmp}
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\newsavebox{\feynmanrules}
+
+\sbox{\feynmanrules}{
+  \begin{fmffile}{./exoticsleptondecay}
+    \fmfcmd{%
+      style_def gaugino expr p =
+      cdraw (wiggly p);
+      cdraw p;
+      enddef;}
+    \begin{fmfgraph*}(50,50)
+      \fmfkeep{exoticsleptondecay}
+      \fmfpen{1.0}
+      \fmfleft{i1}
+      \fmfright{o1,o2}
+      \fmf{dashes}{i1,v1}
+      \fmf{gaugino}{v1,o1}
+      \fmf{plain}{v1,o2}
+      \fmflabel{$\tilde{L}_4$}{i1}
+      \fmflabel{$\tilde{H}_{1,2}^0$}{o1}
+      \fmflabel{$l$}{o2}
+    \end{fmfgraph*}
+  \end{fmffile}
+}
+
+\begin{center}
+\fmfreuse{exoticsleptondecay}
+\end{center}
+
+\end{document}

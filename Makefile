@@ -16,12 +16,34 @@ TALK_FIGS	:= figures
 TALK_DIAGS_DIR	:= $(TALK_FIGS_DIR)
 
 TALK_FEYNMP	:= \
-		$(TALK_DIAGS_DIR)/dmsignals.pdf
+		$(TALK_DIAGS_DIR)/dmsignals.pdf \
+		$(TALK_DIAGS_DIR)/exoticsleptondecay.pdf \
+		$(TALK_DIAGS_DIR)/inerthiggsinodecay1.pdf \
+		$(TALK_DIAGS_DIR)/inerthiggsinodecay2.pdf \
+		$(TALK_DIAGS_DIR)/leptoquarkdecay.pdf
+
 
 TALK_FIGS	:= \
 		$(TALK_FIGS_DIR)/bbn.pdf \
 		$(TALK_FIGS_DIR)/bulletcluster.jpg \
 		$(TALK_FIGS_DIR)/cmb_power_spectrum.pdf \
+		$(TALK_FIGS_DIR)/cmssm_mupos1TeV_MGluMSu6_exclusions.png \
+		$(TALK_FIGS_DIR)/cmssm_mupos1TeV_m12m0_Omega.png \
+		$(TALK_FIGS_DIR)/cmssm_mupos1TeV_m12m0_SigmaSIProton.png \
+		$(TALK_FIGS_DIR)/cmssm_mupos400GeV_MGluMSu6_exclusions.png \
+		$(TALK_FIGS_DIR)/cmssm_mupos400GeV_m12A0_Mhh.png \
+		$(TALK_FIGS_DIR)/cmssm_mupos400GeV_m12m0_Mhh.png \
+		$(TALK_FIGS_DIR)/cmssm_mupos400GeV_m12m0_Omega.png \
+		$(TALK_FIGS_DIR)/cmssm_mupos400GeV_m12m0_SigmaSIProton.png \
+		$(TALK_FIGS_DIR)/cse6ssm_300GeV_mueff_spectrum.pdf \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos1TeV_MGluMSu6_exclusions.png \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos1TeV_m12m0_Omega.png \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos1TeV_m12m0_SigmaSIProton.png \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos400GeV_MGluMSu6_exclusions.png \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos400GeV_m12A0_Mhh.png \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos400GeV_m12m0_Mhh.png \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos400GeV_m12m0_Omega.png \
+		$(TALK_FIGS_DIR)/cse6ssm_mupos400GeV_m12m0_SigmaSIProton.png \
 		$(TALK_FIGS_DIR)/dmcandidates.pdf \
 		$(TALK_FIGS_DIR)/ezssm_bino_fraction.pdf \
 		$(TALK_FIGS_DIR)/ezssm_direct_detection.pdf \

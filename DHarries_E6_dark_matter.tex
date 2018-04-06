@@ -511,7 +511,421 @@
 
 \section{The SE$_6$SSM}
 
+\begin{frame}
+  \frametitle{The SE$_6$SSM}
+  \begin{itemize} \itemsep1em
+    \item $E_6$ inspired model arising from 5D or 6D orbifold GUT [3]
+    \item Complete $\mathbf{27}$-plets supplemented by components
+      of {\color{orange} extra $\mathbf{27^\prime}$-,
+        $\mathbf{\overline{27}^\prime}$-plets}
+    \item Stabilise Higgs potential $\Rightarrow$ pure singlet $\hat{\phi}$
+
+    \item $U(1)_\psi \times U(1)_\chi \rightarrow U(1)_N \times Z_2^M$
+      at intermediate scale $\Rightarrow$ {\color{blue} automatically conserved
+        $Z_2^M$}
+    \item $Z_2^{B/L}$, $Z_2^H$ superseded by
+      {\color{blue} single exact $\tilde{Z}_2^H$}
+  \end{itemize}
+  \vspace*{8pt}
+  \begin{empheq}[box=\widefbox]{align*}
+    W_{\text{SE}_6\text{SSM}} = {} & \, \lambda {\color{orange} \hat{S}}
+    ({\color{orange}\hat{H}_d} \cdot {\color{orange} \hat{H}_u})
+    - \sigma \hat{\phi} {\color{orange}\hat{S}}
+    {\color{orange}\hat{\overline{S}}}
+    + \frac{\kappa}{3}\hat{\phi}^3 + \frac{\mu}{2}\hat{\phi}^2
+    + \Lambda_F\hat{\phi} + \lambda_{\alpha\beta} {\color{orange}\hat{S}}
+    (\hat{H}^d_{\alpha} \cdot \hat{H}^u_{\beta}) \\
+    & {} + \kappa_{ij} {\color{orange}\hat{S}}
+    \hat{D}_{i} \hat{\overline{D}}_{j}
+    + \tilde{f}_{i\alpha} \hat{S}_{i} ({\color{orange}\hat{H}_u} \cdot
+    \hat{H}^d_{\alpha}) + f_{i\alpha} \hat{S}_{i} (\hat{H}^u_{\alpha}
+    \cdot {\color{orange}\hat{H}_d})
+    + g^D_{ij} (\hat{Q}_i \cdot {\color{orange}\hat{L}_4})
+    \hat{\overline{D}}_j \\
+    & {} + h^E_{i\alpha} \hat{e}^c_{i} (\hat{H}^d_{\alpha} \cdot
+    {\color{orange}\hat{L}_4})
+    + \mu_L({\color{orange}\hat{L}_4} \cdot
+    {\color{orange}\hat{\overline{L}}_4}) + \tilde{\sigma}
+    \hat{\phi} ({\color{orange}\hat{L}_4} \cdot
+    {\color{orange}\hat{\overline{L}}_4})
+    + W_{\text{MSSM}}(\mu=0)
+  \end{empheq}
+  \vfill
+  {\tiny [3] R.~Nevzorov,
+        \href{http://doi.org/10.1103/PhysRevD.87.015029}
+             {Phys. Rev. \textbf{D} 87, 015029 (2013)}
+             (\href{http://arxiv.org/abs/1205.5967}{arXiv:1205.5967})}
+\end{frame}
+
+\begin{frame}
+  \frametitle{DM Candidates?}
+  \begin{columns}[t]
+    \begin{column}{0.6\textwidth}
+      \begin{itemize} \itemsep1.2em
+      \item Conserved $Z_2^M$, $\tilde{Z}_2^H$ $\Rightarrow$
+        \emph{two} (distinct) DM candidates
+        \item ``Exotics'' $\equiv Z_2^E$ odd states, where
+          $\tilde{Z}_2^H = Z_2^M \times Z_2^E$
+      \item $Z_2^E$ conserved $\Rightarrow$ lightest exotic is stable
+      \item Limits from exotic Higgs decays, DM direct detection
+        $\Rightarrow$ inert singlinos $\tilde{S}_i$ form subdominant hot DM,
+        $m_{\tilde{S}_i} \ll 1$ eV
+      \item $M_{Z'} \gg M_S \gg M_Z$ $\Rightarrow$ {\color{orange}
+        singlet dominated $\tilde{\chi}^0$'s} decouple
+      \item $\Rightarrow$ allowed scenarios have
+        {\color{blue} MSSM-like $\tilde{\chi}_1^0$} as LSP
+        \begin{itemize} \itemsep0.5em
+        \item Permits interesting comparison with MSSM
+        \item Explore parameter space of constrained models
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{table}[ht]
+        \centering
+        \small
+        \begin{tabular}{cccc}
+          \toprule
+          & $\tilde{Z}_2^H$ & $Z_2^M$ & $Z_2^E$ \\
+          \midrule
+          $\hat{Q}_i$, $\hat{u}_i^c$, $\hat{d}_i^c$, $\hat{L}_i$, $\hat{e}_i^c$,
+          $\hat{N}_i^c$ & $-$ & $-$ & $+$ \\
+          $\hat{H}_{\alpha}^u$, $\hat{H}_{\alpha}^d$, $\hat{S}_i$,
+          $\hat{D}_i$, $\hat{\overline{D}}_i$ & $-$ & $+$ & $-$ \\
+          $\hat{H}_u$, $\hat{H}_d$ & $+$ & $+$ & $+$ \\
+          $\hat{S}$, $\hat{\overline{S}}$ & $+$ & $+$ & $+$ \\
+          $\hat{L}_4$, $\hat{\overline{L}}_4$ & $+$ & $-$ & $-$ \\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+      \vspace{4pt}
+      \begin{center}
+        \begin{tikzpicture}
+          \node[rectangle, draw, fill = white, rounded corners = 6pt,
+            thick, inner sep = 0.5em,align = center]{%
+            Enlarged ($8 \times 8$) $\tilde{\chi}^0$ sector:\\[1em]
+            $
+            M_{\tilde{\chi}^0} = \begin{pmatrix}
+              {\color{blue} A} & C^T \\
+              C & {\color{orange} B}
+            \end{pmatrix}
+            $
+          };
+        \end{tikzpicture}
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 \section{Results}
+
+\begin{frame}
+  \frametitle{Parameter Space Restrictions}
+  \begin{columns}[t]
+    \begin{column}{0.3\textwidth}
+      \vspace{-37pt}
+      \begin{figure}
+        \includegraphics[width=1.1\textwidth]{cse6ssm_mupos400GeV_m12m0_Mhh}
+      \end{figure}
+      \vspace{-30pt}
+      \begin{figure}
+        \includegraphics[width=1.1\textwidth]{cse6ssm_mupos400GeV_m12A0_Mhh}
+      \end{figure}
+      \vspace{-22pt}
+      \begin{center}
+        \tiny [\href{https://arxiv.org/abs/1610.03374}{arXiv:1610.03374}]
+      \end{center}
+    \end{column}
+    \begin{column}{0.7\textwidth}
+      \vspace{-15pt}
+      \begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+          \vspace{-32pt}
+          \begin{figure}
+            \hspace*{20pt}
+            \includegraphics[width=0.93\textwidth]{cmssm_mupos400GeV_m12m0_Mhh}
+          \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \vspace{-20pt}
+          \begin{figure}
+            \centering
+            \includegraphics[width=0.92\textwidth]{cmssm_mupos400GeV_m12A0_Mhh}
+          \end{figure}
+        \end{column}
+      \end{columns}
+      \begin{itemize}
+      \item Successful EWSB $+$ $m_{h_1} \approx 125$ GeV $\Rightarrow$
+        large $m_0 > M_{1/2}, A_0$
+      \item \alert{$m_{h_1} \approx 125$ GeV important constraint on
+        range of variation of $M_{1/2}$, $A_0$}
+        \begin{itemize}
+        \item Additional constraints in CSE$_6$SSM from tachyonic
+          CP-even and CP-odd Higgs states
+        \end{itemize}
+      \item More generally: {\color{blue} $m_{h_1}$ constraint
+        should not be ignored in BSM models}
+        \begin{itemize} \itemsep0.5em
+        \item Expt. precision $\Rightarrow$ \alert{precise theoretical
+          calculation required}
+        \item E.g., on-going work on CNMSSM, CE$_6$SSM
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Sparticle Mass Spectrum}
+  \begin{columns}[t]
+    \begin{column}{0.4\textwidth}
+      \vspace{-30pt}
+      \begin{figure}
+        \begin{center}
+          \includegraphics[width=6.5cm]{cse6ssm_300GeV_mueff_spectrum}
+        \end{center}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \vspace{-10pt}
+      \begin{itemize} \itemsep1em
+      \item Sfermions heavy, but gluino and EW-inos
+        can be observable
+      \item Extra matter content $\supset$ inert states $+$ exotic leptons
+        $\hat{L}_4$, $\hat{\overline{L}}_4$, spin-$0$, spin-$1/2$
+        leptoquarks $\hat{D}_i$, $\hat{\overline{D}}_i$
+      \item {\color{blue} Light exotic fermions can be observable}
+        \begin{itemize} \itemsep0.8em
+        \item Exotic leptoquarks $D_i$: e.g., $p\,p \to t\,\bar{t}
+          \,\tau^+\,\tau^-+E_T^{miss}+X$,
+          $p\,p \to b\,\bar{b} + E_T^{miss} + X$
+        \item Charged, neutral inert Higgsinos: e.g., $p\,p\to W\,W / Z\,Z
+          / W\,Z +E_T^{miss}+X$
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  \vspace{2pt}
+  \begin{center}
+    \begin{figure}
+      \includegraphics[width=0.16\textwidth]{leptoquarkdecay}
+      \hspace{40pt}
+      \includegraphics[width=0.16\textwidth]{exoticsleptondecay}
+      \hspace{40pt}
+      \includegraphics[width=0.16\textwidth]{inerthiggsinodecay1}
+      \hspace{40pt}
+      \includegraphics[width=0.16\textwidth]{inerthiggsinodecay2}
+    \end{figure}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\mu_{(\text{eff.})} \approx 400$ GeV: Relic Density}
+  \begin{columns}[t]
+    \begin{column}{0.5\textwidth}
+      \vspace{-16pt}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{cse6ssm_mupos400GeV_m12m0_Omega}
+      \end{figure}
+      \vspace{-12pt}
+      \begin{itemize}
+        \item $\Omega h^2 \approx 0.1187$ $\Rightarrow$ ``well-tempered''
+          bino-Higgsino $\tilde{\chi}^0$ ($\mu_{\text{eff.}} \sim M_1$)
+        \item Pair annihilations $\tilde{\chi}_1^0\,\tilde{\chi}_1^0
+          \rightarrow \bar{f}\,f$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \vspace{-23pt}
+      \begin{center}
+        \tiny [\href{https://arxiv.org/abs/1610.03374}{arXiv:1610.03374}]
+      \end{center}
+      \vspace{-19pt}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{cmssm_mupos400GeV_m12m0_Omega}
+      \end{figure}
+      \vspace{-13pt}
+      \begin{itemize}
+        \item MSSM-like nature of neutralino sector clear $-$
+          almost identical behaviour
+        \item {\color{blue} Existence of $A$-funnel at $\tan\beta = 10$ notable
+          difference in CSE$_6$SSM}
+      \end{itemize}
+      \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\mu_{(\text{eff.})} \approx 400$ GeV: Direct Detection
+    Cross Section}
+  \begin{columns}[t]
+    \begin{column}{0.6\textwidth}
+      \vspace{-25pt}
+      \begin{figure}
+        \includegraphics[width=0.82\textwidth]{%
+          cse6ssm_mupos400GeV_m12m0_SigmaSIProton}
+      \end{figure}
+      \vspace*{-12pt}
+      \begin{itemize}
+      \item $\sigma^{SI}$ set by $g_{h_1 \chi_1 \chi_1}$ ($t$-channel $h$
+        exchange):
+        {
+          \begin{equation*}\hspace*{-15pt}
+            g_{h_1 \chi_1 \chi_1} \approx \frac{1}{2} \left (
+            \sqrt{\frac{3}{5}} g_1
+                 {\color{red} N_{14}}
+                 - g_2 N_{13} \right ) \left [ {\color{red}N_{11}}
+                   (U_h)_{11} - {\color{red}N_{12}} (U_h)_{12}
+                   \right ]
+        \end{equation*}}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \vspace{-10pt}
+      \begin{itemize}
+        \item Well-tempered $\tilde{\chi}^0_1$ $\Rightarrow$ large
+          mixing, {\color{red}$\sigma_{SI}$ exceeds, e.g., $90$\% LUX
+            limits}
+        \item $M_1 \gg \mu_{\text{eff.}}$ both mixing and number density
+          suppressed
+      \end{itemize}
+      \vspace{-8pt}
+      \begin{figure}
+        \includegraphics[width=1.07\textwidth]{%
+          cmssm_mupos400GeV_m12m0_SigmaSIProton}
+      \end{figure}
+      \vspace{-20pt}
+      \begin{center}
+        \tiny [\href{https://arxiv.org/abs/1610.03374}{arXiv:1610.03374}]
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\mu_{(\text{eff.})} \approx 1$ TeV: Pure Higgsino DM
+    Candidate}
+    \begin{columns}[t]
+    \begin{column}{0.3\textwidth}
+      \vspace{-35pt}
+      \begin{figure}
+        \includegraphics[width=1.1\textwidth]{cse6ssm_mupos1TeV_m12m0_Omega}
+      \end{figure}
+      \vspace{-30pt}
+      \begin{figure}
+        \includegraphics[width=1.1\textwidth]{%
+          cse6ssm_mupos1TeV_m12m0_SigmaSIProton}
+      \end{figure}
+      \vspace{-20pt}
+      \begin{center}
+        \tiny [\href{https://arxiv.org/abs/1610.03374}{arXiv:1610.03374}]
+      \end{center}
+    \end{column}
+    \begin{column}{0.7\textwidth}
+      \begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+          \vspace{-47pt}
+          \begin{figure}
+            \hspace*{20pt}
+            \includegraphics[width=0.93\textwidth]{cmssm_mupos1TeV_m12m0_Omega}
+          \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+          \vspace{-35pt}
+          \begin{figure}
+            \centering
+            \includegraphics[width=0.92\textwidth]{%
+              cmssm_mupos1TeV_m12m0_SigmaSIProton}
+          \end{figure}
+        \end{column}
+      \end{columns}
+      \begin{itemize}\itemsep1em
+        \item Similar parameter space constraints due to $m_{h_1}$,
+          tachyonic states
+        \item Suppress $\tilde{B}$ fraction $\Rightarrow$
+          large $M_{1/2}$, {\color{red} $m_{\tilde{g}} \gtrsim 4$ TeV,
+          $m_{\tilde{q}} \gtrsim 10$ TeV}
+        \item {\color{blue} Exotics not forced to be heavy}
+        \item $\sigma^{SI}$ (mostly) acceptably small
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Current and Future Limits}
+  \begin{columns}[t]
+    \begin{column}{0.5\textwidth}
+      \vspace{-12pt}
+      \begin{figure}
+        \includegraphics[width=0.9\textwidth]{%
+          cse6ssm_mupos400GeV_MGluMSu6_exclusions}
+      \end{figure}
+      \vspace*{-8pt}
+      \begin{itemize}\itemsep1em
+        \item {\color{red} LUX $\Rightarrow$ already stringent limits
+          on highly mixed scenarios}
+        \item XENON1T expected to cover many of the remaining
+          solutions
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \vspace{-24pt}
+      \begin{center}
+        \tiny [\href{https://arxiv.org/abs/1610.03374}{arXiv:1610.03374}]
+      \end{center}
+      \vspace{-12pt}
+      \begin{figure}
+        \includegraphics[width=0.9\textwidth]{%
+          cmssm_mupos400GeV_MGluMSu6_exclusions}
+      \end{figure}
+      \vspace*{-8pt}
+      \begin{itemize}\itemsep1em
+        \item SD limits (LUX, IceCube) can also be relevant
+        \item $A$-funnel solutions can survive, but in reach of
+          LHC run II $\Rightarrow$ {\color{blue}
+            complementarity of searches}
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Current and Future Limits}
+  \begin{columns}[t]
+    \begin{column}{0.5\textwidth}
+      \vspace{-22pt}
+      \begin{figure}
+        \includegraphics[width=0.9\textwidth]{%
+          cse6ssm_mupos1TeV_MGluMSu6_exclusions}
+      \end{figure}
+      \vspace*{-8pt}
+      \begin{itemize}\itemsep1em
+        \item Essentially no collider limits for $\mu_{\text{eff.}}
+          \approx 1$ TeV ({\color{blue}except possibly exotics})
+        \item {\color{red} LUX now excludes mixed
+          $\tilde{\chi}_1^0$ even when $m_{\tilde{\chi}_1^0} \approx 1$ TeV}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \vspace{-22pt}
+      \begin{itemize}\itemsep1em
+        \item Non-mixed scenarios expected to be discoverable at
+          XENON1T
+        \item Larger $M_{1/2}$ and heavy exotics $\Rightarrow$ only
+          accessible at, e.g., LZ
+      \end{itemize}
+      \begin{figure}
+        \includegraphics[width=0.9\textwidth]{%
+          cmssm_mupos1TeV_MGluMSu6_exclusions}
+      \end{figure}
+      \vspace{-20pt}
+      \begin{center}
+        \tiny [\href{https://arxiv.org/abs/1610.03374}{arXiv:1610.03374}]
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
 
 \section{Summary}
 
