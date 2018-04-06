@@ -23,6 +23,8 @@ TALK_FIGS	:= \
 		$(TALK_FIGS_DIR)/bulletcluster.jpg \
 		$(TALK_FIGS_DIR)/cmb_power_spectrum.pdf \
 		$(TALK_FIGS_DIR)/dmcandidates.pdf \
+		$(TALK_FIGS_DIR)/ezssm_bino_fraction.pdf \
+		$(TALK_FIGS_DIR)/ezssm_direct_detection.pdf \
 		$(TALK_FIGS_DIR)/freezeout.pdf \
 		$(TALK_FIGS_DIR)/matter_power_spectrum.pdf \
 		$(TALK_FIGS_DIR)/rotation_curves.pdf \
