@@ -1,6 +1,5 @@
 \documentclass[10pt,aspectratio=169]{beamer}
 
-\usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
@@ -22,11 +21,6 @@
 \usetikzlibrary{shadows.blur}
 
 \newcommand*\widefbox[1]{\fbox{\hspace{0.5em}#1\hspace{0.5em}}}
-\newcommand{\DRbar}{{\overline{\textrm{DR}}}}
-\newcommand{\SUSYv}{{\cancel{SUSY}}}
-
-\DeclareMathOperator{\Tr}{Tr}
-\DeclareMathOperator{\STr}{STr}
 
 \DeclareGraphicsRule{*}{mps}{*}{}
 \graphicspath{{./figures/}}
@@ -35,8 +29,22 @@
 
 \author{D.~Harries\\
   {\scriptsize
-  (IPNP, Charles University in Prague)}
+    (IPNP, Charles University in Prague)}\\
+  \vspace{25pt}
+  { \scriptsize
+    Based on:\\[3mm]
   }
+  { \tiny
+    \href{https://doi.org/10.1016/j.physletb.2016.06.040}{%
+      P.~Athron, D.~Harries, R.~Nevzorov, and A.~G.~Williams,
+      Phys.~Lett.~\textbf{B760}, 19 (2016)}
+         [\href{https://arxiv.org/abs/1512.07040}{arXiv:1512.07040}]\\[1mm]
+    \href{https://doi.org/10.1007/JHEP12(2016)128}{%
+      P.~Athron, D.~Harries, R.~Nevzorov, and A.~G.~Williams,
+      JHEP \textbf{12}, 128 (2016)}
+         [\href{https://arxiv.org/abs/1610.03374}{arXiv:1610.03374}]
+  }
+}
 
 \titlegraphic{
   \begin{center}
